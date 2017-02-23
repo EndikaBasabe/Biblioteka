@@ -149,8 +149,10 @@ public class Main {
 				
 				autor = scan.nextLine();
 				
-				libros = lm.selectLibrosDeAutor(autor);
-
+				Iterator<Libro> it = lm.selectLibrosDeAutor(autor).iterator();
+				while(it.hasNext()){
+					it.next().mostrarInfo();
+				}
 				
 				break;
 			
