@@ -19,6 +19,7 @@ public class Main {
 	public final static int DELETE_LIBRO_POR_ID = 7;
 	public final static int DELETE_SOCIO_POR_ID = 8;
 	public final static int VER_LIBROS_POR_AUTOR = 9;
+	public final static int VER_PRESTAMO_POR_ID_LIBRO_E_ID_SOCIO = 10;
 	public final static int SALIR = 0;
 	
 
@@ -153,6 +154,10 @@ public class Main {
 				while(it.hasNext()){
 					it.next().mostrarInfo();
 				}
+				
+				break;
+				
+			case VER_PRESTAMO_POR_ID_LIBRO_E_ID_SOCIO:
 				
 				break;
 			
